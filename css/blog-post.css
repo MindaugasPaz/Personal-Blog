@@ -1,0 +1,38 @@
+html {
+    background: #f0f0f0;
+}
+.avatar {
+    margin: 10px;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.container{
+    display: grid;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: 80vw;
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+}
+.box{
+    border: 1px solid red;
+    background: #fffff8;
+}
+.header{
+    grid-area:hd;
+    padding: 10px;
+    text-align: center;
+    background: #444;
+    color: #fffff8;
+    font-size: 24px;
+    border-radius: 10px;
+}
+footer{
+    grid-area:ft;
+}
