@@ -1,6 +1,9 @@
 html {
     background: #f0f0f0;
 }
+ul {
+    list-style-type: none;
+}
 /* .box{
     border: 1px solid red;
     background: #fffff8;
@@ -13,6 +16,16 @@ html {
     background: rgb(139, 155, 199);
     color: #fffff8;
     font-size: 30px;
+    background: url('../images/header.jpg');
+}
+.button{
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #4CAF50;
 }
 .sidebar{
     grid-area:sd;
@@ -54,7 +67,6 @@ footer{
         "main"
         "ft";
     }
-    
     }
 
 @media(min-width:901px){
