@@ -20,10 +20,10 @@ html {
     "main"
     "ft";
 }
-.box{
+/* .box{
     border: 1px solid red;
     background: #fffff8;
-}
+} */
 .header{
     grid-area:hd;
     padding: 10px;
