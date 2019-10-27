@@ -4,6 +4,13 @@ html {
 ul {
     list-style-type: none;
 }
+li {
+    margin: 10px;
+}
+p {
+    word-wrap: none;
+    word-break: break-all;
+}
 /* .box{
     border: 1px solid red;
     background: #fffff8;
@@ -18,7 +25,7 @@ ul {
     font-size: 30px;
     background: url('../images/header.jpg');
 }
-.button{
+/* .button{
     border: none;
     background-color: inherit;
     padding: 14px 28px;
@@ -26,11 +33,14 @@ ul {
     cursor: pointer;
     display: inline-block;
     background-color: #4CAF50;
-}
+} */
 .sidebar{
     grid-area:sd;
     display: flex;
     justify-content: left;
+}
+.container {
+    grid-template-rows: 200px 1fr;
 }
 .content{
     grid-area:main;
@@ -54,13 +64,14 @@ footer{
 }
 /* If Screen Is Wide Enough */
 @media(max-width:320px){
+    .header{
+        font-size: 24px;
+    }
     .container{
         display: grid;
-        width: 80vw;
         height: 100vh;
         margin: auto;
-        grid-template-rows: 250px 1fr;
-        grid-template-columns: 80vw;
+        grid-template-rows: 200px 1fr;
         grid-template-areas:
         "hd"
         "sd"
@@ -68,7 +79,21 @@ footer{
         "ft";
     }
     }
+@media(min-width: 600px) and (max-width: 900px){
+    .sidebar{
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    li {
+        margin: 10px;
+    }
 
+}
 @media(min-width:901px){
     .container {
         display: grid;

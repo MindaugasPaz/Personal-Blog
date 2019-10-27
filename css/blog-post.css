@@ -32,11 +32,11 @@ article {
 }
 .container{
     display: grid;
-    width: 80vw;
+    width: 95vw;
     height: 100vh;
     margin: auto;
     grid-template-rows: 200px 1fr;
-    grid-template-columns: 80vw;
+    grid-template-columns: 95vw;
     grid-template-areas:
     "hd"
     "main"
@@ -64,4 +64,31 @@ article {
 } */
 footer{
     grid-area:ft;
+}
+.travel {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:320px){
+    .container{
+        display: grid;
+        width: 80vw;
+        height: 100vh;
+        margin: auto;
+    }
+}
+@media(min-width:900px){
+    .container{
+        display: grid;
+        width: 80vw;
+        height: 100vh;
+        margin: auto;
+        grid-template-rows: 200px 1fr;
+        grid-template-columns: 80vw;
+        grid-template-areas:
+        "hd"
+        "main"
+        "ft";
+        }
 }
