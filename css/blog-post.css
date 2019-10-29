@@ -1,14 +1,28 @@
 html {
     background: #f0f0f0;
 }
+q {
+    font-style: italic;
+}
 .header {
     grid-area:hd;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    display: inline-block;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     color: #fffff8;
     font-size: 30px;
-    background: url('../images/header.jpg');
+    background: url('../images/header1.jpg');
+    background-size: cover;
+}
+.header-text {
+    padding: 30px;
+}
+.header h1 {
+    margin: 0;
+}
+.header p {
+    margin: 0;
 }
 article {
     background-color: #f1f1f1;
@@ -49,26 +63,17 @@ article {
     width: 100%;
     margin: auto;
 }
-/* .box{
-    border: 1px solid red;
-    background: #fffff8;
-} */
-/* .header{
-    grid-area:hd;
-    padding: 10px;
-    text-align: center;
-    background: #444;
-    color: #fffff8;
-    font-size: 24px;
-    border-radius: 10px;
-} */
 footer{
     grid-area:ft;
 }
 .travel {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+.icon {
+    width: 35px;
+    height: 35px;
 }
 @media(max-width:320px){
     .container{
