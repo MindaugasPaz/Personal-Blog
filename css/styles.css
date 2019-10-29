@@ -7,14 +7,6 @@ ul {
 li {
     margin: 10px;
 }
-/* p {
-    word-wrap: normal;
-    word-break: break-all;
-} */
-/* .box{
-    border: 1px solid red;
-    background: #fffff8;
-} */
 .header{
     grid-area:hd;
     border-radius: 10px 10px 0 0;
@@ -37,15 +29,14 @@ li {
 }
 .button {
     display: inline-block;
-    border-radius: 4px;
-    background-color: #f4511e;
+    border-radius: 5px;
+    background-color: #bb6060;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
+    font-size: 20px;
+    padding: 18px;
+    width: 150px;
     cursor: pointer;
     margin: 5px;
   }
