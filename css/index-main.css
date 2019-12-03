@@ -1,13 +1,16 @@
-html {
+@import 'base.css';
+@import 'index-styles.css';
+@import 'index-media.css';
+/* html {
     background: #f0f0f0;
-}
-ul {
+} */
+/* ul {
     list-style-type: none;
 }
 li {
     margin: 10px;
-}
-.header {
+} */
+/* .header {
     grid-area:hd;
     border-radius: 10px 10px 0 0;
     padding-left: 30px;
@@ -26,8 +29,8 @@ li {
 }
 .header p {
     margin: 0;
-}
-.button {
+} */
+/* .button {
     display: inline-block;
     border-radius: 5px;
     background-color: #bb6060;
@@ -56,7 +59,7 @@ li {
 .button:hover span {
     transform:scaleX(1.2);
 }
-.sidebar{
+.sidebar {
     grid-area:sd;
 }
 .icon {
@@ -66,17 +69,17 @@ li {
 .container {
     grid-template-rows: 200px 1fr;
 }
-.content{
+.content {
     grid-area:main;
     display: grid;
     grid-gap: 10px;
     grid-template-rows: minmax(150px, 1);
     padding: 10px;
-}
-footer{
+} */
+/* footer {
     grid-area:ft;
-}
-.card{
+} */
+/* .card {
     display:flex;
     background-color: #f1f1f1;
 }
@@ -88,12 +91,12 @@ footer{
     padding: 16px;
 }
 .blogcard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     border-radius: 10px;
-}
+} */
 /* If Screen Is Wide Enough */
-@media(max-width:320px){
+/* @media(max-width:320px){
     .header{
         font-size: 24px;
     }
@@ -109,7 +112,7 @@ footer{
         "ft";
     }
 }
-@media(min-width: 600px) and (max-width: 900px){
+@media(min-width: 600px) and (max-width: 900px) {
     .sidebar{
         display: flex;
         justify-content: center;
@@ -128,7 +131,7 @@ footer{
       }
 
 }
-@media(min-width:901px){
+@media(min-width:901px) {
     .container {
         display: grid;
         width: 80vw;
@@ -140,10 +143,9 @@ footer{
         "hd hd hd"
         "sd  main main"
         "ft ft ft";
-        /* border: 2px solid red; */
       }
       .content {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
       }
-}
+} */

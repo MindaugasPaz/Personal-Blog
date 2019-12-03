@@ -1,0 +1,22 @@
+@media(max-width:320px){
+    .container{
+        display: grid;
+        width: 80vw;
+        height: 100vh;
+        margin: auto;
+    }
+}
+@media(min-width:900px){
+    .container{
+        display: grid;
+        width: 80vw;
+        height: 100vh;
+        margin: auto;
+        grid-template-rows: 200px 1fr;
+        grid-template-columns: 80vw;
+        grid-template-areas:
+        "hd"
+        "main"
+        "ft";
+        }
+}

@@ -1,28 +1,5 @@
-html {
-    background: #f0f0f0;
-}
 q {
     font-style: italic;
-}
-.header {
-    grid-area:hd;
-    border-radius: 10px 10px 0 0;
-    display: inline-block;
-    padding: 10px;
-    text-align: left;
-    color: #fffff8;
-    font-size: 30px;
-    background: url('../images/header1.jpg');
-    background-size: cover;
-}
-.header-text {
-    padding: 30px;
-}
-.header h1 {
-    margin: 0;
-}
-.header p {
-    margin: 0;
 }
 article {
     background-color: #f1f1f1;
@@ -44,7 +21,7 @@ article {
     height: 75px;
     border-radius: 50%;
 }
-.container{
+.container {
     display: grid;
     width: 95vw;
     height: 100vh;
@@ -63,9 +40,6 @@ article {
     width: 100%;
     margin: auto;
 }
-footer{
-    grid-area:ft;
-}
 .travel {
     width: 100%;
     margin-left: auto;
@@ -74,26 +48,4 @@ footer{
 .icon {
     width: 35px;
     height: 35px;
-}
-@media(max-width:320px){
-    .container{
-        display: grid;
-        width: 80vw;
-        height: 100vh;
-        margin: auto;
-    }
-}
-@media(min-width:900px){
-    .container{
-        display: grid;
-        width: 80vw;
-        height: 100vh;
-        margin: auto;
-        grid-template-rows: 200px 1fr;
-        grid-template-columns: 80vw;
-        grid-template-areas:
-        "hd"
-        "main"
-        "ft";
-        }
 }

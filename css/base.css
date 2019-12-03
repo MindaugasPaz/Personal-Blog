@@ -1,0 +1,26 @@
+html {
+    background: #f0f0f0;
+}
+.header {
+    grid-area:hd;
+    border-radius: 10px 10px 0 0;
+    padding-left: 30px;
+    text-align: left;
+    background: rgb(139, 155, 199);
+    color: #fffff8;
+    font-size: 24px;
+    background: url('../images/header1.jpg');
+    background-size: cover;
+}
+.header-text {
+    padding: 30px;
+}
+.header h1 {
+    margin: 0;
+}
+.header p {
+    margin: 0;
+}
+footer {
+    grid-area:ft;
+}
