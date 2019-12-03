@@ -1,4 +1,4 @@
-@media(max-width:320px){
+@media(max-width:320px) {
     .container{
         display: grid;
         width: 80vw;
@@ -6,7 +6,7 @@
         margin: auto;
     }
 }
-@media(min-width:900px){
+@media(min-width:900px) {
     .container{
         display: grid;
         width: 80vw;
